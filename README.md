@@ -91,7 +91,9 @@ delay(sensorValue);
 
 ## Output:
 
-https://github.com/user-attachments/assets/01892259-4564-4473-9bc6-7a804c2ab6fd
+
+https://github.com/user-attachments/assets/c822711b-a2be-4355-966f-4e4a4fcd8de0
+
 
 ## Result:
 ```
