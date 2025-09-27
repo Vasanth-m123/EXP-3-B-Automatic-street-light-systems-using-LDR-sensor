@@ -2,6 +2,8 @@
 
 ## Aim: 
 
+To control an LED based on ambient light intensity using an LDR and Arduino UNO.
+
 ## Hardware / Software Tools required:
 
 	PC/ Laptop with Internet connection
@@ -12,6 +14,7 @@
   
 ## Circuit Diagram:
 
+<img width="1404" height="671" alt="Screenshot 2025-09-27 082316" src="https://github.com/user-attachments/assets/92c5adfb-1c95-4380-896d-d1b909aef0f0" />
 
 ## Theory :
 
@@ -65,11 +68,32 @@ o	The middle point (between LDR and resistor) connects to the Arduino analog inp
 •	Save the Circuit: Click "Save" to keep your circuit design and code for future use.
 
 ## Code:
-
-
+```
+int sensorPin = A0; 
+int sensorValue = 0;
+int led = 9;
+void setup() {
+pinMode(led, OUTPUT);
+Serial.begin(9600);
+} 
+void loop(){
+sensorValue = analogRead(sensorPin);
+Serial.println(sensorValue);  
+if(sensorValue < 100){
+Serial.println("LED light on");
+digitalWrite(led,HIGH);
+delay(1000);
+ }
+digitalWrite(led,LOW);
+delay(sensorValue);
+}
+```
 
 ## Output:
- 
 
+https://github.com/user-attachments/assets/01892259-4564-4473-9bc6-7a804c2ab6fd
 
 ## Result:
+
+Thus the Automatic-street-light-systems-using-LDR-sensor is verified successfully.
+
