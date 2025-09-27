@@ -94,6 +94,6 @@ delay(sensorValue);
 https://github.com/user-attachments/assets/01892259-4564-4473-9bc6-7a804c2ab6fd
 
 ## Result:
-
+```
 Thus the Automatic-street-light-systems-using-LDR-sensor is verified successfully.
-
+```
